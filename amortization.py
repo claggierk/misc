@@ -58,10 +58,11 @@ def main():
 	zero = 0.00
 
 	ten_years = 10
+	fifteen_years = 15
 	little_extra = 253.97
 
 	mortgageafy(loan_amount, thirty_years, interest_rate, little_extra)
-	mortgageafy(loan_amount, ten_years, , zero)
+	mortgageafy(loan_amount, fifteen_years, interest_rate, zero)
 	
 
 if __name__ == "__main__":
