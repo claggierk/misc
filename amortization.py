@@ -52,17 +52,16 @@ def mortgageafy(loan_amount, loan_length, interest_rate, extra):
 	print ""
 
 def main():
-	loan_amount = 155000.00
+	loan_amount = 100000.00
 	thirty_years = 30
 	interest_rate = 5.0
 	zero = 0.00
 
-	ten_years = 15
+	ten_years = 10
 	little_extra = 253.97
 
-	mortgageafy(loan_amount, thirty_years, 5.5, zero)
-	#mortgageafy(loan_amount, thirty_years, interest_rate, little_extra)
-	mortgageafy(loan_amount, ten_years, 3.625, zero)
+	mortgageafy(loan_amount, thirty_years, interest_rate, little_extra)
+	mortgageafy(loan_amount, ten_years, , zero)
 	
 
 if __name__ == "__main__":
