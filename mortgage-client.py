@@ -1,4 +1,3 @@
-
 from mortgage import Mortgage
 
 def main():
@@ -13,10 +12,12 @@ def main():
    little_extra = 200.0
 
    #my_mortgage = Mortgage(loan_amount, interest_rate, num_years_left)
-   my_mortgage = Mortgage()
+   my_mortgage = Mortgage(loan_amount, interest_rate)
    print my_mortgage
    my_mortgage.amortize()
    my_mortgage.pay_extra_amortize(200)
+   my_mortgage.recalculate(8 * 12 + 6, 0)
+   my_mortgage.recalculate(8 * 12 + 6, 200)
 
 if __name__ == "__main__":
    main()

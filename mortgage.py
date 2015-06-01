@@ -23,8 +23,13 @@ class Mortgage:
     def pay_extra_amortize(self, extra):
         self._amortize(extra)
 
-    def _amortize(self, extra=0.0):
+    def recalculate(self, months_left, extra):
+        self._amortize(months_left, extra)
+
+    def _amortize(self, months_left=None, extra=0.0):
         months_length = self._years * MONTHS_IN_YEAR
+        if months_left is None:
+            months_length = months_left
         monthly_interest_rate = self._interest_rate / 100.0 / float(MONTHS_IN_YEAR)
 
         #       L[c(1 + c)^n]

@@ -1,0 +1,47 @@
+NEW LOAN
+input:
+ - *loan amount
+ - *interest rate
+ - *number of years to pay off
+ - *PMI
+ - *insurance estimate
+ - *property insurance estimate
+
+output:
+ - amortization
+ - how much interest will you pay?
+ - when are you debt free?
+
+----------------------------------
+
+CURRENT LOAN
+input:
+ - *loan balancae
+ - *interest rate
+ - *EXTRA PAID ON PRINCIPAL
+ - *PMI
+ - *insurance estimate
+ - *property insurance estimate
+
+output:
+ - amortization
+ - how much interest do you NOT pay?
+ - when are you debt free?
+
+----------------------------------
+
+CURRENT LOAN
+input:
+ - *loan balance
+ - *interest rate
+ - *target date to be debt free!
+ - *PMI
+ - *insurance estimate
+ - *property insurance estimate
+
+output:
+ - amortization
+ - how much interest do you NOT pay?
+ - how much do you have to pay extra?
+ - when are you debt free?
+
